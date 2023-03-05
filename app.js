@@ -1,15 +1,8 @@
-var balance = 10500;
-var cameraOn = true;
+"use strict";
 
-function steal(balance, amount) {
-    cameraOn = false;
-    if (amount < balance){
-balance = balance - amount;
-    }
-    return amount;
-    cameraOn = true;
+const showLearnMore = document.querySelector(".learn-more-button");
+const paragraphLM = document.querySelector(".test");
 
-}
-
-var amount = steal(balance, 1250);
-alert("criminal: you stole" + amount + "!");
+showLearnMore.addEventListener("click", function () {
+  paragraphLM.classList.remove("hidden");
+});
