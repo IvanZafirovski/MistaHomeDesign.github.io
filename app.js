@@ -10,25 +10,37 @@ const title = document.querySelector(".title");
 const subtitle = document.querySelector(".subtitle");
 const projectBtn = document.querySelector(".btn-header-projects");
 
-showLearnMore.addEventListener("click", function () {
-  console.log("learn more");
+const learnMore = function () {
   expirience.classList.remove("hidden");
+  overlay.classList.remove("hidden");
   title.style.opacity = "0.2";
   subtitle.style.opacity = "0.2";
-});
-showSubscribe.addEventListener("click", function () {
+};
+const subscribeTeam = function () {
   subscribe.classList.remove("hidden");
+  overlay.classList.remove("hidden");
   title.style.opacity = "0.2";
   subtitle.style.opacity = "0.2";
-});
+};
+const overlayAll = function () {
+  overlay.classList.add("hidden");
+  expirience.classList.add("hidden");
+  subscribe.classList.add("hidden");
+  title.style.opacity = "1";
+  subtitle.style.opacity = "1";
+};
 
 for (let i = 0; i < closeBtns.length; i++)
   closeBtns[i].addEventListener("click", function () {
     expirience.classList.add("hidden");
+    subscribe.classList.add("hidden");
     title.style.opacity = "1";
     subtitle.style.opacity = "1";
-    subscribe.classList.add("hidden");
   });
+overlay.addEventListener("click", overlayAll);
+showLearnMore.addEventListener("click", learnMore);
+showSubscribe.addEventListener("click", subscribeTeam);
+
 projectBtn.addEventListener("click", function () {
   console.log("projects");
 });
