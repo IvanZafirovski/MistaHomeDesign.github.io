@@ -308,7 +308,7 @@ a:link {
 }
 
 /* Media  */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 480px) {
   .nav {
     padding: 0;
     position: relative;
