@@ -8,6 +8,7 @@ const overlay = document.querySelector(".overlay");
 const closeBtns = document.querySelectorAll(".close-btn");
 const title = document.querySelector(".title");
 const subtitle = document.querySelector(".subtitle");
+const projectBtn = document.querySelector(".btn-header-projects");
 
 showLearnMore.addEventListener("click", function () {
   console.log("learn more");
@@ -30,3 +31,6 @@ for (let i = 0; i < closeBtns.length; i++)
     title.style.opacity = "1";
     subtitle.style.opacity = "1";
   });
+projectBtn.addEventListener("click", function () {
+  console.log("project");
+});
