@@ -28,9 +28,7 @@ for (let i = 0; i < closeBtns.length; i++)
     title.style.opacity = "1";
     subtitle.style.opacity = "1";
     subscribe.classList.add("hidden");
-    title.style.opacity = "1";
-    subtitle.style.opacity = "1";
   });
 projectBtn.addEventListener("click", function () {
-  console.log("project");
+  console.log("projects");
 });

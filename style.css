@@ -63,7 +63,26 @@
   background: antiquewhite;
   color: rgb(71, 36, 36);
 }
-
+/* DROPDOWN MENU */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+}
+.dropdown-content a {
+  display: block;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  background: antiquewhite;
+  color: rgb(71, 36, 36);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 /* Center */
 .img img {
   background: no-repeat;
