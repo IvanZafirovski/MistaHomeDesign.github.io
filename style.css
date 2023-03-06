@@ -48,7 +48,7 @@
   color: rgb(71, 36, 36);
 }
 .btn-header-projects {
-  text-decoration: none; /* da se trgne underline ot */
+  text-decoration: none;
   background-color: rgb(71, 36, 36);
   font-size: 1.5vw;
   font-weight: 200;
@@ -63,7 +63,23 @@
   background: antiquewhite;
   color: rgb(71, 36, 36);
 }
-/* DROPDOWN MENU */
+.btn-header-the-team {
+  text-decoration: none;
+  background-color: rgb(71, 36, 36);
+  font-size: 1.5vw;
+  font-weight: 200;
+  padding: 8px 16px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  border: none;
+  color: antiquewhite;
+  cursor: pointer;
+}
+.btn-header-the-team:hover {
+  background: antiquewhite;
+  color: rgb(71, 36, 36);
+}
+/* DROPDOWN MENU Projects */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -71,6 +87,11 @@
 .dropdown-content {
   display: none;
   position: absolute;
+  background-color: rgb(71, 36, 36);
+  color: antiquewhite;
+  min-width: 160px;
+  text-align: center;
+  z-index: 1;
 }
 .dropdown-content a {
   display: block;
@@ -231,3 +252,26 @@ a:link {
   display: flex;
   justify-content: center;
 }
+/* THE TEAM */
+.the-team {
+  margin-top: -10px;
+  background-color: antiquewhite;
+  color: rgb(71, 36, 36);
+  text-align: center;
+  font-size: 4vw;
+  padding: 10px;
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container .box {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  margin: 3rem;
+}
+.con
