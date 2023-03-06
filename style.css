@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Popins", sans-serif;
+  font-family: "Rampart One", cursive;
 }
 .nav {
   position: fixed;
@@ -47,28 +47,34 @@
   background: antiquewhite;
   color: rgb(71, 36, 36);
 }
+.btn-header-projects {
+  text-decoration: none; /* da se trgne underline ot */
+  background-color: rgb(71, 36, 36);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  border: none;
+  color: antiquewhite;
+  cursor: pointer;
+}
+.btn-header-projects:hover {
+  background: antiquewhite;
+  color: rgb(71, 36, 36);
+}
 
-.img {
-  background: url("img.jpg") no-repeat;
-  width: 100%;
-  height: 100vh;
+/* Center */
+.img img {
+  position: relative;
+  background: no-repeat;
   background-size: cover;
   background-position: center;
-  position: absolute;
-  z-index: -5;
-}
-.img::before {
-  /* pojavuvanje pred slikata, da izleze pred img najdobro se objasnva so tekst*/
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: rgba(71, 36, 36, 0.5);
 }
 
 .flex-center {
   position: absolute;
-  top: 52%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -77,7 +83,7 @@
 }
 
 .title {
-  color: antiquewhite;
+  color: rgb(241, 137, 0);
   font-size: 55px;
   font-weight: 600;
 }
@@ -172,4 +178,11 @@
 }
 a:link {
   text-decoration: none;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+/* projects */
+.projects {
 }
