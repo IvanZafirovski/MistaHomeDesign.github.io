@@ -1,20 +1,32 @@
 "use strict";
 
 const showLearnMore = document.querySelector(".learn-more-button");
+const showSubscribe = document.querySelector(".subscribe-button");
 const expirience = document.querySelector(".expirience");
+const subscribe = document.querySelector(".subscribe");
 const overlay = document.querySelector(".overlay");
-const closeLM = document.querySelector(".close-learn-more");
+const closeBtns = document.querySelectorAll(".close-btn");
 const title = document.querySelector(".title");
 const subtitle = document.querySelector(".subtitle");
 
 showLearnMore.addEventListener("click", function () {
   console.log("learn more");
   expirience.classList.remove("hidden");
-  title.
-
+  title.style.opacity = "0.2";
+  subtitle.style.opacity = "0.2";
+});
+showSubscribe.addEventListener("click", function () {
+  subscribe.classList.remove("hidden");
+  title.style.opacity = "0.2";
+  subtitle.style.opacity = "0.2";
 });
 
-closeLM.addEventListener("click", function () {
-  expirience.classList.add("hidden");
-  
-});
+for (let i = 0; i < closeBtns.length; i++)
+  closeBtns[i].addEventListener("click", function () {
+    expirience.classList.add("hidden");
+    title.style.opacity = "1";
+    subtitle.style.opacity = "1";
+    subscribe.classList.add("hidden");
+    title.style.opacity = "1";
+    subtitle.style.opacity = "1";
+  });

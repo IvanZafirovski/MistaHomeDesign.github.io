@@ -126,15 +126,16 @@
   transform: translate(-50%, -50%);
   background-color: antiquewhite;
   color: rgb(71, 36, 36);
-  max-width: 500px;
+  width: 600px;
   border: none;
   border-radius: 15px;
   text-align: center;
   font-size: 20px;
   z-index: 10;
 }
-.close-learn-more {
+.close-btn {
   position: absolute;
+  padding: 5px;
   right: 0;
   top: -15%;
   width: 30px;
@@ -142,6 +143,7 @@
   color: #ffffff;
   font-weight: 800;
   cursor: pointer;
+  border-radius: 50%;
 }
 .overlay {
   position: absolute;
@@ -152,4 +154,22 @@
   background-color: rgba 0, 0, 0, 0.6;
   backdrop-filter: blur(3x);
   z-index: 5;
+}
+.subscribe {
+  position: absolute;
+  padding: 20px;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: antiquewhite;
+  color: rgb(71, 36, 36);
+  width: 500px;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 20px;
+  z-index: 10;
+}
+a:link {
+  text-decoration: none;
 }
