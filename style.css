@@ -308,7 +308,7 @@ a:link {
 }
 
 /* Media  */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 320px) {
   .nav {
     padding: 0;
     position: relative;
@@ -325,6 +325,12 @@ a:link {
   }
   .ul li {
     margin-left: 10px;
+  }
+  .flex-center {
+    position: absolute;
+    top: 15%;
+    padding: 0;
+    text-align: center;
   }
   .the-team {
     display: block;
