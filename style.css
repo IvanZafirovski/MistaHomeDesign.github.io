@@ -13,7 +13,6 @@
 }
 
 .menu {
-  max-width: 1250px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -52,7 +51,7 @@
   background-color: rgb(71, 36, 36);
   font-size: 1.5vw;
   font-weight: 200;
-  padding: 8px 16px;
+  padding: 10px;
   border-radius: 15px;
   transition: all 0.3s ease;
   border: none;
@@ -68,7 +67,7 @@
   background-color: rgb(71, 36, 36);
   font-size: 1.5vw;
   font-weight: 200;
-  padding: 8px 16px;
+  padding: 10px;
   border-radius: 15px;
   transition: all 0.3s ease;
   border: none;
@@ -306,4 +305,44 @@ a:link {
   object-fit: cover;
   resize: both;
   border-radius: 15px;
+}
+
+/* Media  */
+@media only screen and (max-width: 600px) {
+  .nav {
+    padding: 0;
+    position: relative;
+  }
+  .menu {
+    padding: 0;
+    display: block;
+  }
+  .ul {
+    padding: 0;
+  }
+  .logo {
+    text-align: center;
+  }
+  .ul li {
+    margin-left: 10px;
+  }
+  .the-team {
+    display: block;
+  }
+  .content {
+    font-size: 13px;
+  }
+  .container .box {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin: 50px;
+  }
+  .imgBox img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    resize: both;
+    border-radius: 15px;
+  }
 }
