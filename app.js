@@ -9,7 +9,7 @@ const closeBtns = document.querySelectorAll(".close-btn");
 const title = document.querySelector(".title");
 const subtitle = document.querySelector(".subtitle");
 const projectBtn = document.querySelector(".btn-header-projects");
-
+let x = document.getElementById("myTopnav");
 const learnMore = function () {
   expirience.classList.remove("hidden");
   overlay.classList.remove("hidden");
@@ -41,6 +41,13 @@ overlay.addEventListener("click", overlayAll);
 showLearnMore.addEventListener("click", learnMore);
 showSubscribe.addEventListener("click", subscribeTeam);
 
+function menuBurger() {
+  if (x.className === "topnav") {
+    x.className += "responive";
+  } else {
+    x.className = "topnav";
+  }
+}
 projectBtn.addEventListener("click", function () {
   console.log("projects");
 });

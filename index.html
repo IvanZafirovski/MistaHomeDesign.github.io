@@ -9,43 +9,24 @@
       href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="nav">
-      <div class="menu">
-        <div class="logo">
-          <a href="https://www.instagram.com/mista_homedesign/"
-            >MISTA Home Design</a
-          >
-        </div>
-        <ul class="ul">
-          <li><a href="#">Home</a></li>
-          <li>
-            <div class="dropdown">
-              <button class="btn-header-projects">Projects</button>
-              <div class="dropdown-content">
-                <a href="#">Link1</a>
-                <a href="#">Link2</a>
-                <a href="#">Link3</a>
-              </div>
-            </div>
-          </li>
-          <li><a href="#">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="#">FeedBack</a></li>
-          <li>
-            <div class="dropdown">
-                <button class="btn-header-the-team">The Team</button>
-                <div class="dropdown-content">
-                  <a href="https://www.facebook.com/ivan.zafirovski/" target="_blank">Ivan</a>
-                  <a href="https://www.facebook.com/stefan.tanevski" target="_blank">Stefan</a>
-                  <a href="https://www.facebook.com/mila.stojkovic.3" target="_blank">Mila</a>
-                  <a href="https://www.facebook.com/ana.tanevska" target="_blank">Ana</a>
-                </div>
-        </ul>
-      </div>
-    </nav>
+    <div class="topnav " id="myTopnav">
+      
+      <a href="#" class="active">Home</a>      
+        <a href="contact.html">Contact</a>
+        <a href="#">FeedBack</a>
+        <a href="#">The Team</a>
+        <a href="javascript:void(0);" class="icon" onclick="menuBurger()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </ul>
+    </div>
     <div class="img">
       <img src="images/pexels.jpg" alt="" class="responsive" />
     </div>
@@ -150,59 +131,64 @@
         </div>
       </div>
     </div>
-    <div class="title-team">Meet the Team
-        <div class="the-team ">
-            <div class="container">
-                <div class="box">
-                    <div class="imgBox">
-                        <img src="images/theteam/ivan.jpg" alt="" >
-                    </div>
-                    <div class="content">
-                        <h2>Ivan Zafirovski <br>
-                            <span>Junior Developer</span>
-                        </h2>
-                    </div>
-                </div>
+    <div class="title-team">
+      Meet the Team
+      <div class="the-team">
+        <div class="container">
+          <div class="box">
+            <div class="imgBox">
+              <img src="images/theteam/ivan.jpg" alt="" />
             </div>
-            <div class="container">
-                <div class="box">
-                    <div class="imgBox">
-                        <img src="images/theteam/stefan.jpg" alt="" >
-                    </div>
-                    <div class="content">
-                        <h2>Stefan Tanevski <br>
-                            <span>Software Engineer</span>
-                        </h2>
-                    </div>
-                </div>
+            <div class="content">
+              <h2>
+                Ivan Zafirovski <br />
+                <span>Junior Developer</span>
+              </h2>
             </div>
+          </div>
         </div>
-        <div class="the-team ">
-            <div class="container">
-                <div class="box">
-                    <div class="imgBox">
-                        <img src="images/theteam/mila.jpg" alt="" >
-                    </div>
-                    <div class="content">
-                        <h2>Mila Stojkovic <br>
-                            <span>UX/UI Designer</span>
-                        </h2>
-                    </div>
-                </div>
+        <div class="container">
+          <div class="box">
+            <div class="imgBox">
+              <img src="images/theteam/stefan.jpg" alt="" />
             </div>
-            <div class="container">
-                <div class="box">
-                    <div class="imgBox">
-                        <img src="images/theteam/ana.jpg" alt="" >
-                    </div>
-                    <div class="content">
-                        <h2>Ana Tanevska <br>
-                            <span>Manager</span>
-                        </h2>
-                    </div>
-                </div>
+            <div class="content">
+              <h2>
+                Stefan Tanevski <br />
+                <span>Software Engineer</span>
+              </h2>
             </div>
+          </div>
         </div>
+      </div>
+      <div class="the-team">
+        <div class="container">
+          <div class="box">
+            <div class="imgBox">
+              <img src="images/theteam/mila.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h2>
+                Mila Stojkovic <br />
+                <span>UX/UI Designer</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="box">
+            <div class="imgBox">
+              <img src="images/theteam/ana.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h2>
+                Ana Tanevska <br />
+                <span>Manager</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <footer class="footer"></footer>
     <script src="app.js"></script>
